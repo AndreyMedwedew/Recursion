@@ -41,3 +41,18 @@ int [,] GetArray(int m, int n, int minvalue, int maxvalue)
     }
     return result;
 }
+
+// печать многомерных массивов
+
+void PrintArray(int[,], inArray)
+{
+    for (int i=0; i<inArray.GetLenght(0); i+=1)
+    {
+        for (int j=0; j<inArray.GetLenght(1); j+=1)
+        {
+            Console.WriteLine($"{result[i,j]}");
+        }
+    }
+}
+
+
