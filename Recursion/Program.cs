@@ -15,3 +15,13 @@ int GetSumNums(int arg)
 }
 
 Console.Write($"Sum numbers: {GetSumNums(number)}");
+
+
+
+int positivesum = 0;
+int negativsum = 0;
+foreach(int el in array)
+{
+    if(el > 0) positivesum += el
+    else negativsum += el
+}
