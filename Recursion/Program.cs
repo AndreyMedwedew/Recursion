@@ -26,3 +26,18 @@ foreach(int el in array)
     if(el > 0) positivesum += el;
     else negativsum += el;
 }
+
+// создание многомерного массива:
+
+int [,] GetArray(int m, int n, int minvalue, int maxvalue)
+{
+    int[,] result = new int[m,n];
+    for(int i=0; i<m; i+=1)
+    {
+        for(int j=0, j<n, j+=1)
+        {
+            result[i,j] = new Random().Next(minvalue, maxvalue);
+        }
+    }
+    return result;
+}
